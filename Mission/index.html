@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "style.css" defer ></script>
+    <link type="text/css" rel="stylesheet" href= "style.css" >
     <title>Mission Statment</title>
 </head>
 <body>
-    <p>Brigham Young Universty-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. It's mission
+    <div class="container">
+        <h1 class="title">Mission Statement</h1>
+        <h2 class="subtitle">Brigham Young University-Idaho</h2>
+    <p class="intro"></pclass>Brigham Young Universty-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. It's mission
         is to develop disiples of Jesus Christ who are leaders in their homes, the church and communities.
     </p>
-    <h1>The universty does this by:</h1>
-    <footer><img src="byui-logo_blue.webp" alt="Logo"/></footer>
+    <p class="subheading">The university does this by:</p>
+    <ol class="list">
+        <li>Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment.</li>
+        <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
+        <li>Serving as many students as possible within resource constraints.</li>
+        <li>Delivering education that is affordable for students and the Church.</li>
+      </ol>
+      <div class="footer">
+        <img src="byui-logo-blue.webp" alt="BYU Idaho Logo" class="logo">
+      </div>
+      <div class="theme-selector">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+    <script src="mission.js"></script>
 </body>
 
 </html>
