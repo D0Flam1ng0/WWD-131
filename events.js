@@ -12,7 +12,7 @@ function taskTemplate(task){
 }
 function renderTasks(tasks) {
   // get the list element from the DOM
-  const listElement = document.querySelector("#todoList")
+  const listElement = document.querySelector("#todoList");
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
   const taskHtml = tasks.map(taskTemplate);
   listElement.innerHTML= taskHtml.join("");
@@ -20,9 +20,9 @@ function renderTasks(tasks) {
 
 function newTask() {
   // get the value entered into the #todo input
-  const todoInput = document.querySelector("#todo").value
+  const todoInput = document.querySelector("#todo").value;
   // add it to our arrays tasks
-  tasks.push({task: todoInput.value,done:false});
+  tasks.push({detail: todoInput.value,completed:false});
   // render out the list
   renderTasks(tasks);
   todoInput.value= "";
@@ -63,10 +63,10 @@ function manageTasks(event) {
   const parent = e.target.closest("li");
   // because we added 'data-action="delete"' to each icon in a task we can access a dataset property on our target (e.target.dataset.action)
   // use that in a couple of if statements to decide whether to run removeTask or completeTask
-  if (e.target.dataset.action === "delete") {
+  if (event.target.dataset.function === "delete") {
     removeTask(parent);
   }
-  if (e.target.dataset.action === "complete") {
+  if (event.target.dataset.function === "complete") {
     completeTask(parent);
   }
 }

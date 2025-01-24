@@ -8,6 +8,52 @@
 --primary-font: Arial, Helvetica,sans-serif;
 --secondary-font: Mooli, san-serif;
 }
-img {
-	max-width: 100%;
-}
+@media screen and (min-width: 700px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* Increase base font size */
+    line-height: 1.6; /* Add a comfortable line height */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default body text color */
+    background-color: #f9f9f9; /* Light background for readability */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mooli', sans-serif;
+    color: #222; /* Headline color */
+  }
+  
+  a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    text-decoration: underline;
+  }
+  
+  header, footer {
+    background-color: #333; /* Header and footer color */
+    color: #fff; /* Text color for header and footer */
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Responsive Images */
+  img {
+    max-width: 100%;
+    height: auto; /* Preserve aspect ratio */
+  }
+  
+  /* Specific Image Styles */
+  img.gallery {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Crops the image without distortion */
+  }
