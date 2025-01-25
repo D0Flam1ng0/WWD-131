@@ -57,3 +57,24 @@ body {
     height: 250px;
     object-fit: cover; /* Crops the image without distortion */
   }
+
+  .hide {
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .menu {
+      display: flex; /* Ensure the menu is visible on larger screens */
+      flex-direction: row;
+    }
+  
+    .menu-button {
+      display: none; /* Hide the menu button on larger screens */
+    }
+  }
+  
