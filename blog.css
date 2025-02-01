@@ -1,0 +1,84 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #473144; /* Dark color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Headline styles using Lora (remember to include it via Google Fonts if you choose it) */
+  h1, h2, h3, h4 {
+    font-family: 'Lora', Impact, serif;
+  }
+  
+  /* Link Styles */
+  a {
+    color: #AF1B3F; /* Red color */
+    text-decoration: none;
+  }
+  
+  /* Colors for accents */
+  .gold {
+    color: #EFC69B;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 100px 100px 100px; /* Adjust sizes as needed */
+    justify-content: end;   /* Aligns the grid container to the right */
+    justify-items: end;     /* Aligns each grid item (each li) to the right */
+    list-style: none;       /* Remove bullets */
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Articles on left, filters on right */
+    gap: 20px; /* space between columns */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    align-items: start;
+  }
+  header h1 {
+    font-size: 2.5rem; /* Adjust as needed */
+    text-align: center;
+    padding: 20px 0;
+  }
+  nav {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  article {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  article h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  
+  article p {
+    margin: 10px 0;
+  }
+          

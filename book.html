@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A blog reviewing awesome books">
+  <meta name="author" content="Your Name">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <title>Book Review Blog</title>
+  <link rel="stylesheet" href="blog.css">
+  <!-- Use defer so that the script runs after the HTML is loaded -->
+  <script defer src="blog.js"></script>
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <div class="skiptocontent">
+    <a href="#maincontent">Skip to main content</a>
+  </div>
+  
+  <!-- Header Section -->
+  <header>
+    <h1>Book Review Blog</h1>
+    <!-- Navigation (we’ll style this with CSS Grid later) -->
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <div class="article-grid">
+      <!-- Left side details -->
+      <div class="details">
+        <time datetime="2022-07-05">July 5, 2022</time>
+        <p>Fantasy | Ages 10-14</p>
+        <p>★★★★</p>
+      </div>
+      <!-- Right side image and description -->
+      <div class="content">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg" alt="Book cover for Septimus Heap 1">
+        <h2>Septimus Heap Book One: Magyk</h2>
+        <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
+      </div>
+    </div>
+  </article>
+  
+  <!-- Main Content Area -->
+  <main id="maincontent">
+    <!-- Section for dynamically generated articles -->
+    <section class="articles">
+      <!-- For now, you can leave a placeholder or (if testing) a single static article -->
+      <!-- Later, we’ll remove any hardcoded articles once JS is adding them -->
+    </section>
+
+    <!-- Sidebar (filters) -->
+    <aside class="filters">
+      <p>Filter form will go here</p>
+    </aside>
+  </main>
+
+  <!-- Footer (if required) -->
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
