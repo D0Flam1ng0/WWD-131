@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charchter-sheet DND</title>
+    <link rel="stylesheet" href="DND.css" />
+    <script src="DND.js"></script>
+</head>
+<body>
+    DND_charchter
+    <select id="class" name="class">
+        <option value="">--Select an option--</option>
+        <option value="Art">Artificer</option>
+        <option value="Barb">Barbarian</option>
+        <option value="bard">Bard</option>
+        <option value="cleric">Cleric</option>
+        <option value="druid">Druid</option>
+        <option value="fighter">Fighter</option>
+        <option value="monk">Monk</option>
+        <option value="paladin">Paladin</option>
+        <option value="ranger">Ranger</option>
+        <option value="rouge">Rogue</option>
+        <option value="Sorcerer">Sorcerer</option>
+        <option value="Warlock">Warlock</option>
+        <option value="Wizard">Wizard</option>
+      </select>
+    <select id="Race" name="Race">
+        <option value="">--Select an option--</option>
+        <option value="Dragon">Dragonborn</option>
+        <option value="Dwarf">Dwarf</option>
+        <option value="Elf">Elf</option>
+        <option value="Gnome">Gnome</option>
+        <option value="half-elf">Half-Elf</option>
+        <option value="half-orc">Half-Orc</option>
+        <option value="Halfling">Halfling</option>
+        <option value="Human">Human</option>
+        <option value="Tiefling">Tiefling</option>
+        <option value="Aarakocra">Aarakocra</option>
+        <option value="aasimar">Aasimar</option>
+        <option value="changeling">Changeling</option>
+        <option value="Deep Gnome">Deep Gnome</option>
+        <option value="Duergar">Duergar</option>
+        <option value="Eladrin">Eladrin</option>
+        <option value="Fairy">Fairy</option>
+        <option value="Firbolg">Firbolg</option>
+        <option value="GenasiA">Genasi (Air)</option>
+        <option value="GensasiE">Genasi (Earth)</option>
+        <option value="GenasiF">Genasi (Fire)</option>
+        <option value="Githy">Githyanki</option>
+        <option value="Githz">Githzerai</option>
+        <option value="Goliath">Goliath</option>
+        <option value="Harengon">Harengon</option>
+        <option value="Kenku">Kenku</option>
+        <option value="Locathah">Locathah</option>
+        <option value="Owlin">Owlin</option>
+        <option value="Satyr">Satyr</option>
+        <option value="Sea Elf">Sea Elf</option>
+        <option value="Shadar-Kai">Shadar-Kai</option>
+        <option value="Tabaxi">Tabaxi</option>
+        <option value="Tortle">Tortle</option>
+        <option value="Triton">Triton</option>
+        <option value="Verdan">Verdan</option>
+      </select>
+      <select id="Asubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Alchemist">Alchemist</option>
+        <option value="Armorer">Armorer</option>
+        <option value="Artillerist">Artillerist</option>
+        <option value="Battle">Battle Smith</option>
+      </select>
+      <select id="Barbsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Ancestral">Path of the Ancestral Guardian</option>
+        <option value="Battlerager">Path of the Battlerager</option>
+        <option value="Beast">Path of the Beast</option>
+        <option value="Berserker">Path of the Berserker</option>
+        <option value="Giant">Path of the Giant</option>
+        <option value="Storm">Path of the Storm Herald</option>
+        <option value="Totem">Path of the Totem Warrior</option>
+        <option value="Wild">Path of Wild Magic</option>
+        <option value="Zealot">Path of the Zealot</option>
+      </select>
+      <select id="Bardsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Creation">College of Creation</option>
+        <option value="Eloquence">College of Eloquence</option>
+        <option value="Glamour">College of Glamour</option>
+        <option value="Lore">College of Lore</option>
+        <option value="Spirits">College of Spirits</option>
+        <option value="Valor">College of Valor</option>
+        <option value="Whispers">College of Whispers</option>
+      </select>
+      <select id="Clericbsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Arcana">Arcana Domain</option>
+        <option value="Death">Death Domain</option>
+        <option value="Forge">Forge Domain</option>
+        <option value="Grave">Grave Domain</option>
+        <option value="Knowledge">Knowledge Domain</option>
+        <option value="Life">Life Domain</option>
+        <option value="Nature">Nature Domain</option>
+        <option value="Order">Order Domain</option>
+        <option value="Peace">Peace Domain</option>
+        <option value="Tempest">Tempest Domain</option>
+        <option value="Trickery">Trickery Domain</option>
+        <option value="Twilight">Twilight Domain</option>
+        <option value="War">War Domain</option>
+      </select>
+      <select id="Druidsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Dreams">Circle of Dreams</option>
+        <option value="Land">Circle of the Land</option>
+        <option value="Moon">Circle of the Moon</option>
+        <option value="Shepherd">Circle of the Shepherd</option>
+        <option value="Spores">Circle of Spores</option>
+        <option value="Stars">Circle of Stars</option>
+        <option value="Wildfire">Circle of Wildfire</option>
+      </select>
+      <select id="Fightsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Archer">Arcane Archer</option>
+        <option value="Banneret">Banneret</option>
+        <option value="Battle-Master">Battle Master</option>
+        <option value="Cavalier">Cavalier</option>
+        <option value="Champion">Champion</option>
+        <option value="Echo">Echo Knight</option>
+        <option value="Eldritch">Eldritch Knight</option>
+        <option value="psi">Psi Warrior</option>
+        <option value="Rune">Rune Knight</option>
+        <option value="Samurai">Samurai</option>
+      </select>
+      <select id="Msubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Mercy">Way of Mercy</option>
+        <option value="Dragons">Way of the Ascendant Dragon</option>
+        <option value="Astrals">Way of the Astral Self</option>
+        <option value="Druken">Way of the Drunken Master</option>
+        <option value="Four">Way of the Four Elementsr</option>
+        <option value="Kensei">Way of the Kensei</option>
+        <option value="Long">Way of the Long Death</option>
+        <option value="Open">Way of the Open Hand</option>
+        <option value="Shadow">Way of Shadow</option>
+        <option value="Sun">Way of the Sun Soul</option>
+      </select>
+      <select id="Psubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Ancients">Oath of the Ancients</option>
+        <option value="Conquest">Oath of Conquest</option>
+        <option value="Crown">Oath of the Crown</option>
+        <option value="Devotion">Oath of Devotion</option>
+        <option value="Glory">Oath of Glory</option>
+        <option value="Redemption">Oath of Redemption</option>
+        <option value="Vengeance">Oath of Vengeance</option>
+        <option value="Watchers">Oath of the Watchers</option>
+        <option value="Breaker">Oathbreaker</option>
+      </select>
+      <select id="Rasubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Beast">Beast Master Conclave</option>
+        <option value="Drake">Drakewarden</option>
+        <option value="Fey">Fey Wanderer</option>
+        <option value="Gloom">Gloom Stalker Conclave</option>
+        <option value="Horizon">Horizon Walker Conclave</option>
+        <option value="Hunter">Hunter Conclave</option>
+        <option value="Monster">Monster Slayer Conclave</option>
+        <option value="Swarm">Swarmkeeper</option>
+      </select>
+      <select id="Rosubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Trickster">Arcane Trickster</option>
+        <option value="Assassin">Assassin</option>
+        <option value="Inquisitive">Inquisitive</option>
+        <option value="Mastermind">Mastermind</option>
+        <option value="Phantom">Phantom</option>
+        <option value="Scout">Scout</option>
+        <option value="Soulknife">Soulknife</option>
+        <option value="Swashbuckler">Swashbuckler</option>
+        <option value="Thief">Thief</option>
+      </select>
+      <select id="Sorsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Aberrant">Aberrant Mind</option>
+        <option value="Clockwork">Clockwork Soul</option>
+        <option value="Draconic">Draconic Bloodline</option>
+        <option value="Divine">Divine Soul</option>
+        <option value="Lunar">Lunar Sorcery</option>
+        <option value="Shadow">Shadow Magic</option>
+        <option value="Sorcery">Storm Sorcery</option>
+        <option value="wild-magic">Wild Magic</option>
+      </select>
+      <select id="Warsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Archfey">Archfey</option>
+        <option value="Celestial">Celestial</option>
+        <option value="Fathomless">Fathomless</option>
+        <option value="Fiend">Fiend</option>
+        <option value="Genie">The Genie</option>
+        <option value="Credit3">Great Old One</option>
+        <option value="Credit4">Hexblade</option>
+        <option value="Credit4">Undead</option>
+        <option value="Credit4">Undying</option>
+      </select>
+      <select id="Wsubclass" name="subclass">
+        <option value="">--Select an option--</option>
+        <option value="Abjuration">School of Abjuration</option>
+        <option value="Bladesinging">School of Bladesinging</option>
+        <option value="Chronurgy">School of Chronurgy</option>
+        <option value="Conjuration">School of Conjuration</option>
+        <option value="Divination">School of Divination</option>
+        <option value="Enchantment">School of Enchantment</option>
+        <option value="Evocation">School of Evocation</option>
+        <option value="Graviturgy">School of Graviturgy</option>
+        <option value="Illusion">School of Illusion</option>
+        <option value="Necromancy">School of Necromancy</option>
+        <option value="Scribes">Order of Scribes</option>
+        <option value="Transmutation">School of Transmutation</option>
+        <option value="war-Magic">School of War Magic</option>
+      </select>
+      <input type="number"id="Level" name="level"><br><br>
+      <input type="text"id="charchter_name" name="charchter_name"><br><br>
+      
+</body>
+</html>
