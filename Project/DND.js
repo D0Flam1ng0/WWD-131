@@ -1267,5 +1267,14 @@ function setlocalStorage(key, data) {
 }
 
 function getlocalStorage(key) {
-  return JSON.parse(localStorage.getItem(key));
+  const data = localStorage.getItem(key);
+  if (data) {
+    try {
+      return JSON.parse(data);
+    } catch (e) {
+      console.error("Error parsing data from localStorage", e);
+      return null;  // Return null if there's an error parsing
+    }
+  }
+  return null;  // Return null if the key doesn't exist
 }
