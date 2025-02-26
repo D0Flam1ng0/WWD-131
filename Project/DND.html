@@ -4,49 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charchter-sheet DND</title>
-    <link rel="stylesheet" href="DND.css" />
-    <script src="DND.js"></script>
+    <script src="DND.js" defer></script>
 </head>
 <body>
     DND_charchter
+    <input type="text"id="charchter_name" name="charchter_name"><br><br>
     <select id="class" name="class">
-        <option value="">--Select an option--</option>
-        <option value="Art">Artificer</option>
-        <option value="Barb">Barbarian</option>
-        <option value="bard">Bard</option>
-        <option value="cleric">Cleric</option>
-        <option value="druid">Druid</option>
-        <option value="fighter">Fighter</option>
-        <option value="monk">Monk</option>
-        <option value="paladin">Paladin</option>
-        <option value="ranger">Ranger</option>
-        <option value="rouge">Rogue</option>
-        <option value="Sorcerer">Sorcerer</option>
-        <option value="Warlock">Warlock</option>
-        <option value="Wizard">Wizard</option>
-      </select>
+      <option value="">--Select a class--</option>
+      <option value="Art">Artificer</option>
+      <option value="Barb">Barbarian</option>
+      <option value="Bard">Bard</option>
+      <option value="Cleric">Cleric</option>
+      <option value="Druid">Druid</option>
+      <option value="Fighter">Fighter</option>
+      <option value="Monk">Monk</option>
+      <option value="Paladin">Paladin</option>
+      <option value="Ranger">Ranger</option>
+      <option value="Rogue">Rogue</option>
+      <option value="Sorcerer">Sorcerer</option>
+      <option value="Warlock">Warlock</option>
+      <option value="Wizard">Wizard</option>
+  </select>
+  
     <select id="Race" name="Race">
-        <option value="">--Select an option--</option>
-        <option value="Dragon">Dragonborn</option>
+        <option value="">--Select a race--</option>
+        <option value="Dragonborn">Dragonborn</option>
         <option value="Dwarf">Dwarf</option>
         <option value="Elf">Elf</option>
         <option value="Gnome">Gnome</option>
-        <option value="half-elf">Half-Elf</option>
-        <option value="half-orc">Half-Orc</option>
+        <option value="Half-Elf">Half-Elf</option>
+        <option value="Half-Orc">Half-Orc</option>
         <option value="Halfling">Halfling</option>
         <option value="Human">Human</option>
         <option value="Tiefling">Tiefling</option>
         <option value="Aarakocra">Aarakocra</option>
-        <option value="aasimar">Aasimar</option>
-        <option value="changeling">Changeling</option>
+        <option value="Aasimar">Aasimar</option>
+        <option value="Changeling">Changeling</option>
         <option value="Deep Gnome">Deep Gnome</option>
         <option value="Duergar">Duergar</option>
         <option value="Eladrin">Eladrin</option>
         <option value="Fairy">Fairy</option>
         <option value="Firbolg">Firbolg</option>
         <option value="GenasiA">Genasi (Air)</option>
-        <option value="GensasiE">Genasi (Earth)</option>
+        <option value="GenasiE">Genasi (Earth)</option>
         <option value="GenasiF">Genasi (Fire)</option>
+        <option value="GenasiW">Genasi (Water)</option>
         <option value="Githy">Githyanki</option>
         <option value="Githz">Githzerai</option>
         <option value="Goliath">Goliath</option>
@@ -62,15 +64,15 @@
         <option value="Triton">Triton</option>
         <option value="Verdan">Verdan</option>
       </select>
-      <select id="Asubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Asubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Alchemist">Alchemist</option>
         <option value="Armorer">Armorer</option>
         <option value="Artillerist">Artillerist</option>
         <option value="Battle">Battle Smith</option>
       </select>
-      <select id="Barbsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Barbsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Ancestral">Path of the Ancestral Guardian</option>
         <option value="Battlerager">Path of the Battlerager</option>
         <option value="Beast">Path of the Beast</option>
@@ -81,8 +83,8 @@
         <option value="Wild">Path of Wild Magic</option>
         <option value="Zealot">Path of the Zealot</option>
       </select>
-      <select id="Bardsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Bardsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Creation">College of Creation</option>
         <option value="Eloquence">College of Eloquence</option>
         <option value="Glamour">College of Glamour</option>
@@ -91,8 +93,8 @@
         <option value="Valor">College of Valor</option>
         <option value="Whispers">College of Whispers</option>
       </select>
-      <select id="Clericbsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Clericsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Arcana">Arcana Domain</option>
         <option value="Death">Death Domain</option>
         <option value="Forge">Forge Domain</option>
@@ -107,8 +109,8 @@
         <option value="Twilight">Twilight Domain</option>
         <option value="War">War Domain</option>
       </select>
-      <select id="Druidsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Druidsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Dreams">Circle of Dreams</option>
         <option value="Land">Circle of the Land</option>
         <option value="Moon">Circle of the Moon</option>
@@ -117,8 +119,8 @@
         <option value="Stars">Circle of Stars</option>
         <option value="Wildfire">Circle of Wildfire</option>
       </select>
-      <select id="Fightsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Fightsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Archer">Arcane Archer</option>
         <option value="Banneret">Banneret</option>
         <option value="Battle-Master">Battle Master</option>
@@ -130,8 +132,8 @@
         <option value="Rune">Rune Knight</option>
         <option value="Samurai">Samurai</option>
       </select>
-      <select id="Msubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Msubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Mercy">Way of Mercy</option>
         <option value="Dragons">Way of the Ascendant Dragon</option>
         <option value="Astrals">Way of the Astral Self</option>
@@ -143,8 +145,8 @@
         <option value="Shadow">Way of Shadow</option>
         <option value="Sun">Way of the Sun Soul</option>
       </select>
-      <select id="Psubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Psubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Ancients">Oath of the Ancients</option>
         <option value="Conquest">Oath of Conquest</option>
         <option value="Crown">Oath of the Crown</option>
@@ -155,8 +157,8 @@
         <option value="Watchers">Oath of the Watchers</option>
         <option value="Breaker">Oathbreaker</option>
       </select>
-      <select id="Rasubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Rasubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Beast">Beast Master Conclave</option>
         <option value="Drake">Drakewarden</option>
         <option value="Fey">Fey Wanderer</option>
@@ -166,8 +168,8 @@
         <option value="Monster">Monster Slayer Conclave</option>
         <option value="Swarm">Swarmkeeper</option>
       </select>
-      <select id="Rosubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Rosubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Trickster">Arcane Trickster</option>
         <option value="Assassin">Assassin</option>
         <option value="Inquisitive">Inquisitive</option>
@@ -178,8 +180,8 @@
         <option value="Swashbuckler">Swashbuckler</option>
         <option value="Thief">Thief</option>
       </select>
-      <select id="Sorsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Sorsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Aberrant">Aberrant Mind</option>
         <option value="Clockwork">Clockwork Soul</option>
         <option value="Draconic">Draconic Bloodline</option>
@@ -189,20 +191,20 @@
         <option value="Sorcery">Storm Sorcery</option>
         <option value="wild-magic">Wild Magic</option>
       </select>
-      <select id="Warsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Warsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Archfey">Archfey</option>
         <option value="Celestial">Celestial</option>
         <option value="Fathomless">Fathomless</option>
         <option value="Fiend">Fiend</option>
         <option value="Genie">The Genie</option>
-        <option value="Credit3">Great Old One</option>
-        <option value="Credit4">Hexblade</option>
-        <option value="Credit4">Undead</option>
-        <option value="Credit4">Undying</option>
+        <option value="Great">Great Old One</option>
+        <option value="Hexblade">Hexblade</option>
+        <option value="Undead">Undead</option>
+        <option value="Undying">Undying</option>
       </select>
-      <select id="Wsubclass" name="subclass">
-        <option value="">--Select an option--</option>
+      <select hidden id="Wsubclass" name="subclass">
+        <option value="">--Select a subclass--</option>
         <option value="Abjuration">School of Abjuration</option>
         <option value="Bladesinging">School of Bladesinging</option>
         <option value="Chronurgy">School of Chronurgy</option>
@@ -217,8 +219,70 @@
         <option value="Transmutation">School of Transmutation</option>
         <option value="war-Magic">School of War Magic</option>
       </select>
-      <input type="number"id="Level" name="level"><br><br>
-      <input type="text"id="charchter_name" name="charchter_name"><br><br>
+      <select hidden id="Dragonborn" name="Dragonborn">
+        <option value="">--Select a Ancestry--</option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+        <option value="Brass">Brass</option>
+        <option value="Bronze">Bronze</option>
+        <option value="Copper">Copper</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Amethyst">Amethyst</option>
+        <option value="Crystal">Crystal</option>
+        <option value="Emerald">Emerald</option>
+        <option value="Sapphire">Sapphire</option>
+        <option value="Topaz">Topaz</option>
+      </select>
+      <input type="number" id="Level" value="1" min="1" max="20">
+      <p><strong>Speed:</strong> <span id="speedDisplay">Select a race</span></p>
+      <p><strong>Size:</strong> <span id="sizeDisplay">Select a race</span></p>
+      <p><strong>Languages:</strong> <span id="languagesDisplay">Select a race</span></p>
+      <p><strong>Race Abilities:</strong> <span id="raceAbilitiesDisplay">Select a race</span></p>
+      <p id="breath-weapon"></p>
+<!-- Ability Scores Section -->
+<div>
+    <label for="Strength">Strength:</label>
+    <input type="number" id="Strength" value="10" min="1" max="20">
+    <span id="StrengthModifier">Modifier: +0</span>
+</div>
+<div>
+    <label for="Dexterity">Dexterity:</label>
+    <input type="number" id="Dexterity" value="10" min="1" max="20">
+    <span id="DexterityModifier">Modifier: +0</span>
+</div>
+<div>
+    <label for="Constitution">Constitution:</label>
+    <input type="number" id="Constitution" value="10" min="1" max="20">
+    <span id="ConstitutionModifier">Modifier: +0</span>
+</div>
+<div>
+    <label for="Intelligence">Intelligence:</label>
+    <input type="number" id="Intelligence" value="10" min="1" max="20">
+    <span id="IntelligenceModifier">Modifier: +0</span>
+</div>
+<div>
+    <label for="Wisdom">Wisdom:</label>
+    <input type="number" id="Wisdom" value="10" min="1" max="20">
+    <span id="WisdomModifier">Modifier: +0</span>
+</div>
+<div>
+    <label for="Charisma">Charisma:</label>
+    <input type="number" id="Charisma" value="10" min="1" max="20">
+    <span id="CharismaModifier">Modifier: +0</span>
+</div>
+
+      <div id="abilities">
+        <!--Class features will appear here -->
+      </div>
+      <div id="subclassFeatures">
+        <!-- Subclass features will appear here -->
+      </div>
+      
+      
       
 </body>
 </html>
